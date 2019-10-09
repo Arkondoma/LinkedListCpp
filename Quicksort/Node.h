@@ -22,12 +22,6 @@ public:
 		next = nullptr;
 	}
 
-	~Node()
-	{
-		delete previous;
-		delete next;
-	}
-
 	void setPrevious(Node * p) { this->previous = p; }
 	void setNext(Node * n) { this->next = n; }
 	int val() const { return value; }
